@@ -1,0 +1,24 @@
+# ── Jupyter ────────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Python cache ───────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── Model artifacts ────────────────────────────────────────────────────────────
+# pipeline_final.pkl is small (2.1MB) — safe to push
+# df_final.pkl is small (616KB) — safe to push
+# Exclude only if you ever regenerate large pipelines
+# pipeline.pkl  ← already deleted
+
+# ── CatBoost training logs ─────────────────────────────────────────────────────
+catboost_info/
+
+# ── Large generated outputs ────────────────────────────────────────────────────
+2_eda/output_report.html
+
+# ── OS ─────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

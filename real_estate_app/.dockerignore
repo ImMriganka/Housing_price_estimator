@@ -1,0 +1,33 @@
+# Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Large/unused CSVs
+flats.csv
+houses.csv
+gurgaon_properties.csv
+flats_cleaned.csv
+house_cleaned.csv
+gurgaon_properties_cleaned_v1.csv
+gurgaon_properties_cleaned_v2.csv
+gurgaon_properties_outlier_treated.csv
+gurgaon_properties_post_feature_selection.csv
+
+# Old model
+pipeline.pkl
+df.pkl
+
+# Generated outputs
+output_report.html
+catboost_info/
+error_analysis_final.png
+feature_importance_final.png
+
+# OS / Python cache
+.DS_Store
+__pycache__/
+*.pyc
+
+# Git
+.git/
+.gitignore
