@@ -2,13 +2,16 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=for-the-badge&logo=streamlit)
 ![CatBoost](https://img.shields.io/badge/CatBoost-Best_Model-yellow?style=for-the-badge)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange?style=for-the-badge&logo=scikit-learn)
+![HuggingFace](https://img.shields.io/badge/🤗%20Live%20Demo-Hugging%20Face-yellow?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **A full-stack machine learning project that predicts residential property prices in Gurgaon, India — complete with an interactive web application featuring price prediction, market analytics, property recommendations, and statistical insights.**
+
+### 🔴 Live Demo → [nestimate.streamlit.app on Hugging Face](https://huggingface.co/spaces/IMriganka/nestimate)
 
 [Features](#-features) • [App Modules](#-app-modules) • [ML Pipeline](#-ml-pipeline) • [Project Structure](#-project-structure) • [Getting Started](#-getting-started) • [Results](#-results)
 
@@ -187,6 +190,14 @@ Housing_price_estimator/
 
 ## 🚀 Getting Started
 
+### 🔴 Try the Live App
+
+**[https://huggingface.co/spaces/IMriganka/nestimate](https://huggingface.co/spaces/IMriganka/nestimate)**
+
+No setup needed — runs directly in your browser.
+
+---
+
 ### Run Locally
 
 ```bash
@@ -219,13 +230,11 @@ docker run -p 8501:8501 gurgaon-property-app
 
 ---
 
-### Deploy on Streamlit Cloud (Free)
+### Deploy on Hugging Face Spaces (Free)
 
-1. Push this repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your GitHub account
-4. Set **Main file path** to `real_estate_app/app.py`
-5. Click **Deploy** — done ✅
+1. Create a new Space at [huggingface.co/spaces](https://huggingface.co/spaces) — choose **Streamlit** SDK
+2. Clone the Space repo and copy `real_estate_app/` files into it
+3. Push — Hugging Face installs `requirements.txt` and launches automatically ✅
 
 ---
 
