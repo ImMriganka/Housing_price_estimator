@@ -7,6 +7,7 @@
 ![CatBoost](https://img.shields.io/badge/CatBoost-Best_Model-yellow?style=for-the-badge)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange?style=for-the-badge&logo=scikit-learn)
 ![HuggingFace](https://img.shields.io/badge/🤗%20Live%20Demo-Hugging%20Face-yellow?style=for-the-badge)
+![CI](https://github.com/ImMriganka/Housing_price_estimator/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **A full-stack machine learning project that predicts residential property prices in Gurgaon, India — complete with an interactive web application featuring price prediction, market analytics, property recommendations, and statistical insights.**
@@ -216,7 +217,18 @@ Open **http://localhost:8501** in your browser.
 
 ---
 
-### Run with Docker
+### Run with Docker Compose
+
+```bash
+# From the repo root
+docker compose up --build
+```
+
+Open **http://localhost:8501** in your browser. The compose file includes a health check that polls Streamlit's `/_stcore/health` endpoint.
+
+---
+
+### Run with Docker (standalone)
 
 ```bash
 cd real_estate_app
@@ -270,7 +282,8 @@ MAPE          : 18.4%
 | **Visualization** | Plotly · Matplotlib · Seaborn · WordCloud |
 | **Statistics** | Statsmodels |
 | **Encoding** | category_encoders (TargetEncoder) |
-| **Containerization** | Docker |
+| **Containerization** | Docker · Docker Compose |
+| **CI/CD** | GitHub Actions (lint → Docker build) |
 
 </div>
 
